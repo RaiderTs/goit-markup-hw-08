@@ -1,0 +1,62 @@
+.benefits {
+    @media screen and (min-width: 768px) {
+        &-nav-item:nth-last-child(2n) {
+            margin-right: 30px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        &-nav-item:last-child {
+            margin-right: 0;
+        }
+    }
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @extend %container-mobile;
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    @media screen and (max-width: 767px) {
+        .site-nav,
+        .auth-nav {
+            display: none;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        width: 1200px;
+    }
+    &-advantages-list {
+        list-style: none;
+        @media screen and ( min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    &-nav-item {
+        padding-top: 4px;
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 30px) / 2);
+        }
+        @media screen and (max-width:767px) {
+            width: 100%;
+        }
+        @media screen and (min-width: 1200px) {
+            padding: 0;
+            margin-right: 30px;
+            width: calc((100% - 30px * 3) / 4);
+        }
+        color: $title-text-color;
+        font-family: Roboto;
+        font-size: 16px;
+        line-height: 1.88;
+    }
+    @media screen and (min-width: 768px) {
+        &-logo:nth-last-child(-n+2) {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.specialization {
+    display: flex;
+    flex-wrap: wrap;
+    & li {
+        margin-right: 30px;
+    }
+    & li:last-child {
+        margin-right: 0;
+    }
+    .our-focus {
+        width: calc((100% - 60px) / 3);
+        position: relative;
+    }
+}
+
+.our-focus {
+    .photo-title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+.photo-title {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    .white-color-title {
+        color: $white-color;
+        background-color: $color-specialization;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        padding: 27px;
+        text-align: center;
+    }
+}

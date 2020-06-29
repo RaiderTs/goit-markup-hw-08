@@ -1,0 +1,56 @@
+ .benefits-nav-item {
+     margin-bottom: 30px;
+     @media screen and (min-width: 768px) {
+         &:nth-last-child(-n+2) {
+             margin-bottom: 0;
+         }
+     }
+     .picture {
+         display: flex;
+         justify-content: center;
+         border-radius: 4px;
+         background: $color-picture;
+         border: 1px solid transparent;
+         height: 120px;
+         align-items: center;
+         text-align: center;
+         margin-bottom: 30px;
+     }
+     .picture_antenna {
+         height: 70px;
+         width: 65.32px;
+     }
+     .picture_clock {
+         height: 70px;
+         width: 66.96px;
+     }
+     .picture_diagram {
+         height: 53.69px;
+         width: 70px;
+     }
+     .picture_astronaut {
+         height: 70px;
+         width: 70px;
+     }
+     .title {
+         text-align: center;
+         color: $page-color;
+         font-family: Roboto;
+         font-weight: bold;
+         font-size: 14px;
+         line-height: 1.14;
+         text-transform: uppercase;
+         margin-bottom: 10px;
+     }
+     .description {
+         color: $title-text-color;
+         margin-top: 0;
+         margin-bottom: 0;
+         /* width: 278px; */
+         height: 50px;
+         font-family: Roboto;
+         font-size: 14px;
+         line-height: 1.71;
+         letter-spacing: 0.03em;
+     }
+ }

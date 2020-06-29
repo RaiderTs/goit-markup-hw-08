@@ -1,0 +1,18 @@
+.focus {
+    padding-bottom: 94px;
+    @media screen and (min-width: 1200) {
+        width: 1200px;
+    }
+    &-container {
+        @extend %container;
+    }
+    &-title {
+        @extend %section-title;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .focus {
+        display: none;
+    }
+}

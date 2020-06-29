@@ -1,0 +1,86 @@
+.hero-button {
+    color: $white-color;
+    border-radius: 4px;
+    background: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    border: 1px solid transparent;
+    width: 200px;
+    height: 50px;
+    transition-property: background, color, border;
+    transition: $transition;
+    animation: hero-button 0.9s both;
+    &:active {
+        box-shadow: 0 2px 0 #c4d1d8;
+        transform: translateY(7px);
+    }
+    &:focus,
+    &:hover {
+        outline-color: $accent-color;
+        color: $accent-color;
+        background-color: $white-color;
+        border: 1px solid $accent-color;
+        animation-name: hero-button;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+}
+
+// Анимация для hero-button
+@keyframes hero-button {
+    0% {
+        transform: translateY(-45px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    24% {
+        opacity: 1;
+    }
+    40% {
+        transform: translateY(-24px);
+        animation-timing-function: ease-in;
+    }
+    65% {
+        transform: translateY(-12px);
+        animation-timing-function: ease-in;
+    }
+    82% {
+        transform: translateY(-6px);
+        animation-timing-function: ease-in;
+    }
+    93% {
+        transform: translateY(-4px);
+        animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+}
+
+@keyframes hero-button {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

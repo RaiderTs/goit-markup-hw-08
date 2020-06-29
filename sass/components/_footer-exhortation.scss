@@ -1,0 +1,87 @@
+    .footer {
+        &-exhortation {
+            background-color: $color-footer;
+            @media screen and (max-width: 1199px) {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            @media screen and (min-width: 1200px) {
+                width: 570px;
+            }
+        }
+        &-color {
+            color: $white-color;
+            font-family: Roboto;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 1.14;
+            margin: 0;
+            padding-bottom: 20px;
+        }
+        &-subscribe {
+            @media (min-width: 1200px) {
+                display: flex;
+                align-items: center;
+            }
+        }
+        .subscribe {
+            &-input {
+                width: 100%;
+                @media screen and (min-width: 768px) {
+                    width: 450px;
+                    margin-top: 0;
+                }
+                @media screen and (min-width: 1200px) {
+                    width: 358px;
+                    margin-right: 12px;
+                }
+                outline-color: $accent-color;
+                padding-left: 10px;
+                height: 50px;
+                color: $white-color;
+                margin-top: 20px;
+                background-color: $color-footer;
+                box-sizing: border-box;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+                border-radius: 4px;
+            }
+            &-button-sign {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $white-color;
+                border-radius: 4px;
+                background: $accent-color;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+                font-family: inherit;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 1.6;
+                letter-spacing: 0.06em;
+                border: 1px solid transparent;
+                width: 200px;
+                height: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                cursor: pointer;
+                @media screen and (max-width: 1199px) {
+                    margin-top: 20px;
+                }
+                .send {
+                    margin-left: 10px;
+                }
+            }
+            &-button-sign:active {
+                box-shadow: 0 2px 0 #c4d1d8;
+                transform: translateY(5px);
+                --color4: #2196f3;
+            }
+            &-button-sign:hover,
+            &-button-sign:focus {
+                background-color: $white-color;
+                color: $accent-color;
+                --color4: #2196f3;
+            }
+        }
+    }

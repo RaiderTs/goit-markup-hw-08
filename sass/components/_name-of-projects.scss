@@ -1,0 +1,25 @@
+.name-of-projects {
+    border: 1px solid $color-border;
+    border-top: 0px;
+    padding: 20px 24px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.name-of-cards {
+    color: $page-color;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.name-of-item {
+    margin: 0;
+    padding-top: 4px;
+    color: $title-text-color;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.88;
+}

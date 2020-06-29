@@ -1,0 +1,37 @@
+    .social-networks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        fill: #afb1b8;
+        height: 44px;
+        width: 44px;
+        border-radius: 50%;
+        transition-property: background-color, fill;
+        transition: $transition;
+        &:hover,
+        &:focus {
+            animation: social-networks 0.5s ease-in-out infinite both;
+            background-color: $accent-color;
+            fill: #ffffff;
+        }
+        &-our-team:last-child {
+            margin-right: 0;
+        }
+        &-our-team {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+    
+    // анимация для social-networks
+    @keyframes social-networks {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }

@@ -1,0 +1,95 @@
+.work-examples {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    @media screen and (min-width: 768px) {
+        padding-bottom: 30px;
+    }
+}
+
+.button {
+    &-container {
+        @extend %container-mobile;
+        display: flex;
+        justify-content: center;
+        @media screen and (min-width: 480px) {
+            width: 480px;
+        }
+        @media screen and (min-width: 768px) {
+            width: 768px;
+        }
+    }
+    &-portfolio {
+        animation: button-portfolio 0.9s 0.5s;
+    }
+}
+
+.button-portfolio {
+    .primary {
+        text-align: center;
+        padding: 6px 22px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.62;
+        border-radius: 4px;
+        margin-right: 8px;
+        border: none;
+        transition-property: background-color, color;
+        @media(max-width: 767px) {
+            margin-bottom: 15px;
+        }
+    }
+    .primary:nth-last-child(-n+2) {
+        margin-bottom: 0;
+    }
+    .primary:last-child {
+        margin-right: 0;
+    }
+    .primary:hover,
+    .primary:focus {
+        outline: $accent-color;
+        background-color: $accent-color;
+        color: $white-color;
+        font-family: inherit;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+    }
+}
+
+// анимация button-portfolio 
+@keyframes button-portfolio {
+    0% {
+        transform: translateY(-45px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    24% {
+        opacity: 1;
+    }
+    40% {
+        transform: translateY(-24px);
+        animation-timing-function: ease-in;
+    }
+    65% {
+        transform: translateY(-12px);
+        animation-timing-function: ease-in;
+    }
+    82% {
+        transform: translateY(-6px);
+        animation-timing-function: ease-in;
+    }
+    93% {
+        transform: translateY(-4px);
+        animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+}
