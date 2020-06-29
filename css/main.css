@@ -502,22 +502,22 @@ img {
 
 @media screen and (max-width: 767px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../../images/Header_480.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/Header_480.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/Header_480.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header_480.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../../images/Header_768.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/Header_768.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/Header_768.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header_768.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../../images/Header_1600.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/Header_1600.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/Header_1600.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header_1600.jpg);
   }
 }
 
@@ -2117,6 +2117,7 @@ img {
     min-width: 450px;
     min-height: 609px;
     margin-top: 208px;
+    top: 30%;
   }
 }
 
@@ -2323,7 +2324,7 @@ img {
 .checkbox:checked + .checkbox-icon {
   background-color: #2196f3;
   border-color: transparent;
-  background-image: url(../../images/icon_check.svg);
+  background-image: url(../images/icon_check.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
