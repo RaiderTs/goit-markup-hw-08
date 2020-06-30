@@ -560,7 +560,15 @@ img {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
+  .hero-title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+  }
+}
+
+@media screen and (min-width: 480px) {
   .hero-title {
     width: 360px;
     font-weight: 900;
