@@ -2112,7 +2112,14 @@ img {
   padding: 40px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 467px) {
+  .modal {
+    min-height: 609px;
+    margin-top: 93px;
+  }
+}
+
+@media screen and (min-width: 468px) {
   .modal {
     min-width: 450px;
     min-height: 609px;

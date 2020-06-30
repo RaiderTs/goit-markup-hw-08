@@ -8,7 +8,12 @@
         text-align: center;
         border-radius: 4px;
         padding: 40px;
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 467px) {
+            // min-width: 450px;
+            min-height: 609px;
+            margin-top: 93px;
+        }
+        @media screen and (min-width: 468px) {
             min-width: 450px;
             min-height: 609px;
             margin-top: 93px;
