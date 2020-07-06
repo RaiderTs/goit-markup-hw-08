@@ -1,44 +1,44 @@
-    .modal {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(1);
-        transition: $transition;
-        background-color: $white-color;
-        text-align: center;
-        border-radius: 4px;
-        padding: 40px;
-        @media screen and (max-width: 467px) {
-            // min-width: 450px;
-            min-height: 609px;
-            margin-top: 93px;
-        }
-        @media screen and (min-width: 468px) {
-            min-width: 450px;
-            min-height: 609px;
-            margin-top: 93px;
-        }
-        @media screen and (min-width: 768px) {
-            min-width: 450px;
-            min-height: 609px;
-            margin-top: 208px;
-            top: 30%;
-        }
-        @media screen and (min-width: 1200px) {
-            min-height: 581px;
-            min-width: 528px;
-            top: 50%;
-            margin-top: 0;
-        }
-        &-title {
-            font-family: Roboto;
-            font-weight: bold;
-            font-size: 20px;
-            line-height: 1.15;
-            text-align: center;
-            letter-spacing: 0.03em;
-            color: $page-color;
-            margin-top: 0;
-            margin-bottom: 30px;
-        }
-    }
+.modal {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: $transition;
+  background-color: $white-color;
+  text-align: center;
+  border-radius: 4px;
+  padding: 40px;
+  @media screen and (max-width: 467px) {
+    // min-width: 450px;
+    min-height: 609px;
+    margin-top: 93px;
+  }
+  @media screen and (min-width: 468px) {
+    min-width: 450px;
+    min-height: 609px;
+    margin-top: 93px;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 450px;
+    min-height: 609px;
+    margin-top: 208px;
+    top: 30%;
+  }
+  @media screen and (min-width: 1200px) {
+    min-height: 581px;
+    min-width: 528px;
+    top: 50%;
+    margin-top: 0;
+  }
+  &-title {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $page-color;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
